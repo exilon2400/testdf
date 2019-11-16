@@ -28,10 +28,12 @@ if ($method == "POST") {
             $r = $a * $b;
             $speech = "ça fait ".$r." !";
         }
+
+        $speech +=  " a : ".$a." | b : ".$b;
+
     } else {
         $speech = "Inconnue";
     }
-
 
     $response = new \stdClass();
     $response->speech = $speech;
