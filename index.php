@@ -11,7 +11,7 @@ if ($method == "POST") {
 
     if ($action == "calc") {
         $a = $parameters->a;
-        $b = $parameters->$b;
+        $b = $parameters->b;
         $a++; $a--;
         $b++; $b--;
 
@@ -28,8 +28,6 @@ if ($method == "POST") {
             $r = $a * $b;
             $speech = "ça fait ".$r." !";
         }
-
-        $speech =  $a." | ".$b;
 
     } else {
         $speech = "Inconnue";
