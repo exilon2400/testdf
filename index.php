@@ -29,7 +29,7 @@ if ($method == "POST") {
             $speech = "ça fait ".$r." !";
         }
 
-        $speech =  " a : ".$a." | b : ".$b;
+        $speech =  $a." | ".$b;
 
     } else {
         $speech = "Inconnue";
